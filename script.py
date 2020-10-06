@@ -6,7 +6,9 @@ class Dati():
 temp=None
 listaDati=list()
 
-with open('/Users/marioegidio/Desktop/test', 'r') as reader:
+filePath = sys.argv[-1]
+
+with open(filePath, 'r') as reader:
 	# Read and print the entire file line by line
 	line = reader.readline()
 	while line != '':  # The EOF char is an empty string
