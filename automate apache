@@ -1,57 +1,57 @@
 echo "Inizio..."
 
 echo "Concorrenza 1 statico senza keepalive..."
-sudo /usr/sbin/apachectl restart
+apachectl restart
 echo "Riavviato..."
 sleep 30
 ab -n 10000 -c 1 http://127.0.0.1:80/statico.html
-sudo /usr/sbin/apachectl restart
+apachectl restart
 echo "Riavviato..."
 sleep 30
 ab -n 10000 -c 1 http://127.0.0.1:80/statico.html
-sudo /usr/sbin/apachectl restart
+apachectl restart
 echo "Riavviato..."
 sleep 30
 ab -n 10000 -c 1 http://127.0.0.1:80/statico.html
 
 echo "Concorrenza 1 statico con keepalive..."
-sudo /usr/sbin/apachectl restart
+apachectl restart
 echo "Riavviato..."
 sleep 30
 ab -n 10000 -c 1 -k http://127.0.0.1:80/statico.html
-sudo /usr/sbin/apachectl restart
+apachectl restart
 echo "Riavviato..."
 sleep 30
 ab -n 10000 -c 1 -k http://127.0.0.1:80/statico.html
-sudo /usr/sbin/apachectl restart
+apachectl restart
 echo "Riavviato..."
 sleep 30
 ab -n 10000 -c 1 -k http://127.0.0.1:80/statico.html
 
 echo "Concorrenza 1 dinamico senza keepalive..."
-sudo /usr/sbin/apachectl restart
+apachectl restart
 echo "Riavviato..."
 sleep 30
 ab -n 10000 -c 1 http://127.0.0.1:80/dinamico.php
-sudo /usr/sbin/apachectl restart
+apachectl restart
 echo "Riavviato..."
 sleep 30
 ab -n 10000 -c 1 http://127.0.0.1:80/dinamico.php
-sudo /usr/sbin/apachectl restart
+apachectl restart
 echo "Riavviato..."
 sleep 30
 ab -n 10000 -c 1 http://127.0.0.1:80/dinamico.php
 
 echo "Concorrenza 1 dinamico con keepalive..."
-sudo /usr/sbin/apachectl restart
+apachectl restart
 echo "Riavviato..."
 sleep 30
 ab -n 10000 -c 1 -k http://127.0.0.1:80/dinamico.php
-sudo /usr/sbin/apachectl restart
+apachectl restart
 echo "Riavviato..."
 sleep 30
 ab -n 10000 -c 1 -k http://127.0.0.1:80/dinamico.php
-sudo /usr/sbin/apachectl restart
+apachectl restart
 echo "Riavviato..."
 sleep 30
 ab -n 10000 -c 1 -k http://127.0.0.1:80/dinamico.php
@@ -62,58 +62,58 @@ ab -n 10000 -c 1 -k http://127.0.0.1:80/dinamico.php
 
 
 echo "Concorrenza 25 statico senza keepalive..."
-sudo /usr/sbin/apachectl restart
+apachectl restart
 echo "Riavviato..."
 sleep 30
 ab -n 10000 -c 25 http://127.0.0.1:80/statico.html
-sudo /usr/sbin/apachectl restart
+apachectl restart
 echo "Riavviato..."
 sleep 30
 ab -n 10000 -c 25 http://127.0.0.1:80/statico.html
-sudo /usr/sbin/apachectl restart
+apachectl restart
 echo "Riavviato..."
 sleep 30
 ab -n 10000 -c 25 http://127.0.0.1:80/statico.html
 
 echo "Concorrenza 25 statico con keepalive..."
-sudo /usr/sbin/apachectl restart
+apachectl restart
 echo "Riavviato..."
 sleep 30
 ab -n 10000 -c 25 -k http://127.0.0.1:80/statico.html
-sudo /usr/sbin/apachectl restart
+apachectl restart
 echo "Riavviato..."
 sleep 30
 ab -n 10000 -c 25 -k http://127.0.0.1:80/statico.html
-sudo /usr/sbin/apachectl restart
+apachectl restart
 echo "Riavviato..."
 sleep 30
 ab -n 10000 -c 25 -k http://127.0.0.1:80/statico.html
 
 
 echo "Concorrenza 25 dinamico senza keepalive..."
-sudo /usr/sbin/apachectl restart
+apachectl restart
 echo "Riavviato..."
 sleep 30
 ab -n 10000 -c 25 http://127.0.0.1:80/dinamico.php
-sudo /usr/sbin/apachectl restart
+apachectl restart
 echo "Riavviato..."
 sleep 30
 ab -n 10000 -c 25 http://127.0.0.1:80/dinamico.php
-sudo /usr/sbin/apachectl restart
+apachectl restart
 echo "Riavviato..."
 sleep 30
 ab -n 10000 -c 25 http://127.0.0.1:80/dinamico.php
 
 echo "Concorrenza 25 dinamico con keepalive..."
-sudo /usr/sbin/apachectl restart
+apachectl restart
 echo "Riavviato..."
 sleep 30
 ab -n 10000 -c 25 -k http://127.0.0.1:80/dinamico.php
-sudo /usr/sbin/apachectl restart
+apachectl restart
 echo "Riavviato..."
 sleep 30
 ab -n 10000 -c 25 -k http://127.0.0.1:80/dinamico.php
-sudo /usr/sbin/apachectl restart
+apachectl restart
 echo "Riavviato..."
 sleep 30
 ab -n 10000 -c 25 -k http://127.0.0.1:80/dinamico.php
@@ -122,58 +122,58 @@ ab -n 10000 -c 25 -k http://127.0.0.1:80/dinamico.php
 
 
 echo "Concorrenza 50 statico senza keepalive..."
-sudo /usr/sbin/apachectl restart
+apachectl restart
 echo "Riavviato..."
 sleep 30
 ab -n 10000 -c 50 http://127.0.0.1:80/statico.html
-sudo /usr/sbin/apachectl restart
+apachectl restart
 echo "Riavviato..."
 sleep 30
 ab -n 10000 -c 50 http://127.0.0.1:80/statico.html
-sudo /usr/sbin/apachectl restart
+apachectl restart
 echo "Riavviato..."
 sleep 30
 ab -n 10000 -c 50 http://127.0.0.1:80/statico.html
 
 echo "Concorrenza 50 statico con keepalive..."
-sudo /usr/sbin/apachectl restart
+apachectl restart
 echo "Riavviato..."
 sleep 30
 ab -n 10000 -c 50 -k http://127.0.0.1:80/statico.html
-sudo /usr/sbin/apachectl restart
+apachectl restart
 echo "Riavviato..."
 sleep 30
 ab -n 10000 -c 50 -k http://127.0.0.1:80/statico.html
-sudo /usr/sbin/apachectl restart
+apachectl restart
 echo "Riavviato..."
 sleep 30
 ab -n 10000 -c 50 -k http://127.0.0.1:80/statico.html
 
 
 echo "Concorrenza 50 dinamico senza keepalive..."
-sudo /usr/sbin/apachectl restart
+apachectl restart
 echo "Riavviato..."
 sleep 30
 ab -n 10000 -c 50 http://127.0.0.1:80/dinamico.php
-sudo /usr/sbin/apachectl restart
+apachectl restart
 echo "Riavviato..."
 sleep 30
 ab -n 10000 -c 50 http://127.0.0.1:80/dinamico.php
-sudo /usr/sbin/apachectl restart
+apachectl restart
 echo "Riavviato..."
 sleep 30
 ab -n 10000 -c 50 http://127.0.0.1:80/dinamico.php
 
 echo "Concorrenza 50 dinamico con keepalive..."
-sudo /usr/sbin/apachectl restart
+apachectl restart
 echo "Riavviato..."
 sleep 30
 ab -n 10000 -c 50 -k http://127.0.0.1:80/dinamico.php
-sudo /usr/sbin/apachectl restart
+apachectl restart
 echo "Riavviato..."
 sleep 30
 ab -n 10000 -c 50 -k http://127.0.0.1:80/dinamico.php
-sudo /usr/sbin/apachectl restart
+apachectl restart
 echo "Riavviato..."
 sleep 30
 ab -n 10000 -c 50 -k http://127.0.0.1:80/dinamico.php
@@ -183,58 +183,58 @@ ab -n 10000 -c 50 -k http://127.0.0.1:80/dinamico.php
 
 
 echo "Concorrenza 75 statico senza keepalive..."
-sudo /usr/sbin/apachectl restart
+apachectl restart
 echo "Riavviato..."
 sleep 30
 ab -n 10000 -c 75 http://127.0.0.1:80/statico.html
-sudo /usr/sbin/apachectl restart
+apachectl restart
 echo "Riavviato..."
 sleep 30
 ab -n 10000 -c 75 http://127.0.0.1:80/statico.html
-sudo /usr/sbin/apachectl restart
+apachectl restart
 echo "Riavviato..."
 sleep 30
 ab -n 10000 -c 75 http://127.0.0.1:80/statico.html
 
 echo "Concorrenza 75 statico con keepalive..."
-sudo /usr/sbin/apachectl restart
+apachectl restart
 echo "Riavviato..."
 sleep 30
 ab -n 10000 -c 75 -k http://127.0.0.1:80/statico.html
-sudo /usr/sbin/apachectl restart
+apachectl restart
 echo "Riavviato..."
 sleep 30
 ab -n 10000 -c 75 -k http://127.0.0.1:80/statico.html
-sudo /usr/sbin/apachectl restart
+apachectl restart
 echo "Riavviato..."
 sleep 30
 ab -n 10000 -c 75 -k http://127.0.0.1:80/statico.html
 
 
 echo "Concorrenza 75 dinamico senza keepalive..."
-sudo /usr/sbin/apachectl restart
+apachectl restart
 echo "Riavviato..."
 sleep 30
 ab -n 10000 -c 75 http://127.0.0.1:80/dinamico.php
-sudo /usr/sbin/apachectl restart
+apachectl restart
 echo "Riavviato..."
 sleep 30
 ab -n 10000 -c 75 http://127.0.0.1:80/dinamico.php
-sudo /usr/sbin/apachectl restart
+apachectl restart
 echo "Riavviato..."
 sleep 30
 ab -n 10000 -c 75 http://127.0.0.1:80/dinamico.php
 
 echo "Concorrenza 75 dinamico con keepalive..."
-sudo /usr/sbin/apachectl restart
+apachectl restart
 echo "Riavviato..."
 sleep 30
 ab -n 10000 -c 75 -k http://127.0.0.1:80/dinamico.php
-sudo /usr/sbin/apachectl restart
+apachectl restart
 echo "Riavviato..."
 sleep 30
 ab -n 10000 -c 75 -k http://127.0.0.1:80/dinamico.php
-sudo /usr/sbin/apachectl restart
+apachectl restart
 echo "Riavviato..."
 sleep 30
 ab -n 10000 -c 75 -k http://127.0.0.1:80/dinamico.php
@@ -245,58 +245,58 @@ ab -n 10000 -c 75 -k http://127.0.0.1:80/dinamico.php
 
 
 echo "Concorrenza 100 statico senza keepalive..."
-sudo /usr/sbin/apachectl restart
+apachectl restart
 echo "Riavviato..."
 sleep 30
 ab -n 10000 -c 100 http://127.0.0.1:80/statico.html
-sudo /usr/sbin/apachectl restart
+apachectl restart
 echo "Riavviato..."
 sleep 30
 ab -n 10000 -c 100 http://127.0.0.1:80/statico.html
-sudo /usr/sbin/apachectl restart
+apachectl restart
 echo "Riavviato..."
 sleep 30
 ab -n 10000 -c 100 http://127.0.0.1:80/statico.html
 
 echo "Concorrenza 100 statico con keepalive..."
-sudo /usr/sbin/apachectl restart
+apachectl restart
 echo "Riavviato..."
 sleep 30
 ab -n 10000 -c 100 -k http://127.0.0.1:80/statico.html
-sudo /usr/sbin/apachectl restart
+apachectl restart
 echo "Riavviato..."
 sleep 30
 ab -n 10000 -c 100 -k http://127.0.0.1:80/statico.html
-sudo /usr/sbin/apachectl restart
+apachectl restart
 echo "Riavviato..."
 sleep 30
 ab -n 10000 -c 100 -k http://127.0.0.1:80/statico.html
 
 
 echo "Concorrenza 100 dinamico senza keepalive..."
-sudo /usr/sbin/apachectl restart
+apachectl restart
 echo "Riavviato..."
 sleep 30
 ab -n 10000 -c 100 http://127.0.0.1:80/dinamico.php
-sudo /usr/sbin/apachectl restart
+apachectl restart
 echo "Riavviato..."
 sleep 30
 ab -n 10000 -c 100 http://127.0.0.1:80/dinamico.php
-sudo /usr/sbin/apachectl restart
+apachectl restart
 echo "Riavviato..."
 sleep 30
 ab -n 10000 -c 100 http://127.0.0.1:80/dinamico.php
 
 echo "Concorrenza 100 dinamico con keepalive..."
-sudo /usr/sbin/apachectl restart
+apachectl restart
 echo "Riavviato..."
 sleep 30
 ab -n 10000 -c 100 -k http://127.0.0.1:80/dinamico.php
-sudo /usr/sbin/apachectl restart
+apachectl restart
 echo "Riavviato..."
 sleep 30
 ab -n 10000 -c 100 -k http://127.0.0.1:80/dinamico.php
-sudo /usr/sbin/apachectl restart
+apachectl restart
 echo "Riavviato..."
 sleep 30
 ab -n 10000 -c 100 -k http://127.0.0.1:80/dinamico.php
@@ -309,58 +309,58 @@ ab -n 10000 -c 100 -k http://127.0.0.1:80/dinamico.php
 
 
 echo "Concorrenza 150 statico senza keepalive..."
-sudo /usr/sbin/apachectl restart
+apachectl restart
 echo "Riavviato..."
 sleep 30
 ab -n 10000 -c 150 http://127.0.0.1:80/statico.html
-sudo /usr/sbin/apachectl restart
+apachectl restart
 echo "Riavviato..."
 sleep 30
 ab -n 10000 -c 150 http://127.0.0.1:80/statico.html
-sudo /usr/sbin/apachectl restart
+apachectl restart
 echo "Riavviato..."
 sleep 30
 ab -n 10000 -c 150 http://127.0.0.1:80/statico.html
 
 echo "Concorrenza 150 statico con keepalive..."
-sudo /usr/sbin/apachectl restart
+apachectl restart
 echo "Riavviato..."
 sleep 30
 ab -n 10000 -c 150 -k http://127.0.0.1:80/statico.html
-sudo /usr/sbin/apachectl restart
+apachectl restart
 echo "Riavviato..."
 sleep 30
 ab -n 10000 -c 200 http://127.0.0.1:80/dinamico.php
-sudo /usr/sbin/apachectl restart
+apachectl restart
 echo "Riavviato..."
 sleep 30
 ab -n 10000 -c 150 -k http://127.0.0.1:80/statico.html
 
 
 echo "Concorrenza 150 dinamico senza keepalive..."
-sudo /usr/sbin/apachectl restart
+apachectl restart
 echo "Riavviato..."
 sleep 30
 ab -n 10000 -c 150 http://127.0.0.1:80/dinamico.php
-sudo /usr/sbin/apachectl restart
+apachectl restart
 echo "Riavviato..."
 sleep 30
 ab -n 10000 -c 150 http://127.0.0.1:80/dinamico.php
-sudo /usr/sbin/apachectl restart
+apachectl restart
 echo "Riavviato..."
 sleep 30
 ab -n 10000 -c 150 http://127.0.0.1:80/dinamico.php
 
 echo "Concorrenza 150 dinamico con keepalive..."
-sudo /usr/sbin/apachectl restart
+apachectl restart
 echo "Riavviato..."
 sleep 30
 ab -n 10000 -c 150 -k http://127.0.0.1:80/dinamico.php
-sudo /usr/sbin/apachectl restart
+apachectl restart
 echo "Riavviato..."
 sleep 30
 ab -n 10000 -c 150 -k http://127.0.0.1:80/dinamico.php
-sudo /usr/sbin/apachectl restart
+apachectl restart
 echo "Riavviato..."
 sleep 30
 ab -n 10000 -c 150 -k http://127.0.0.1:80/dinamico.php
@@ -368,63 +368,67 @@ ab -n 10000 -c 150 -k http://127.0.0.1:80/dinamico.php
 
 
 echo "Concorrenza 200 statico senza keepalive..."
-sudo /usr/sbin/apachectl restart
+apachectl restart
 echo "Riavviato..."
 sleep 30
 ab -n 10000 -c 200 http://127.0.0.1:80/statico.html
-sudo /usr/sbin/apachectl restart
+apachectl restart
 echo "Riavviato..."
 sleep 30
 ab -n 10000 -c 200 http://127.0.0.1:80/statico.html
-sudo /usr/sbin/apachectl restart
+apachectl restart
 echo "Riavviato..."
 sleep 30
 ab -n 10000 -c 200 http://127.0.0.1:80/statico.html
 
 echo "Concorrenza 200 statico con keepalive..."
-sudo /usr/sbin/apachectl restart
+apachectl restart
 echo "Riavviato..."
 sleep 30
 ab -n 10000 -c 200 -k http://127.0.0.1:80/statico.html
-sudo /usr/sbin/apachectl restart
+apachectl restart
 echo "Riavviato..."
 sleep 30
 ab -n 10000 -c 200 -k http://127.0.0.1:80/statico.html
-sudo /usr/sbin/apachectl restart
+apachectl restart
 echo "Riavviato..."
 sleep 30
 ab -n 10000 -c 200 -k http://127.0.0.1:80/statico.html
 
 
 echo "Concorrenza 200 dinamico senza keepalive..."
-sudo /usr/sbin/apachectl restart
+apachectl restart
 echo "Riavviato..."
 sleep 30
 ab -n 10000 -c 200 http://127.0.0.1:80/dinamico.php
-sudo /usr/sbin/apachectl restart
+apachectl restart
 echo "Riavviato..."
 sleep 30
 ab -n 10000 -c 200 http://127.0.0.1:80/dinamico.php
-sudo /usr/sbin/apachectl restart
+apachectl restart
 echo "Riavviato..."
 sleep 30
 ab -n 10000 -c 200 http://127.0.0.1:80/dinamico.php
 
 echo "Concorrenza 200 dinamico con keepalive..."
-sudo /usr/sbin/apachectl restart
+apachectl restart
 echo "Riavviato..."
 sleep 30
 ab -n 10000 -c 200 -k http://127.0.0.1:80/dinamico.php
-sudo /usr/sbin/apachectl restart
+apachectl restart
 echo "Riavviato..."
 sleep 30
 ab -n 10000 -c 200 -k http://127.0.0.1:80/dinamico.php
-sudo /usr/sbin/apachectl restart
+apachectl restart
 echo "Riavviato..."
 sleep 30
 ab -n 10000 -c 200 -k http://127.0.0.1:80/dinamico.php
 
 
 
+
+echo "Salvataggio in corso..."
+
+python3 script.py
 
 echo "Fine..."
